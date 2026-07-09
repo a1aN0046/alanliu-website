@@ -2,10 +2,27 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Alan Liu | Portfolio",
+  title: "Alan Liu | Electrical Engineering Portfolio",
   description:
-    "Alan Liu's personal portfolio website for engineering, robotics, software, and technology projects."
+    "Alan Liu's personal portfolio website for electrical engineering, robotics, software, hardware systems, and technology projects."
 };
+
+const themeScript = `
+(() => {
+  try {
+    const storedTheme = localStorage.getItem("alanliu-theme");
+    const theme = storedTheme === "light" || storedTheme === "dark" || storedTheme === "system" ? storedTheme : "system";
+    const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+    const shouldUseDark = theme === "dark" || (theme === "system" && prefersDark);
+    document.documentElement.classList.toggle("dark", shouldUseDark);
+    document.documentElement.dataset.theme = theme;
+  } catch {
+    const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+    document.documentElement.classList.toggle("dark", prefersDark);
+    document.documentElement.dataset.theme = "system";
+  }
+})();
+`;
 
 export default function RootLayout({
   children
@@ -13,7 +30,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
+      <head>
+        <script dangerouslySetInnerHTML={{ __html: themeScript }} />
+      </head>
       <body>{children}</body>
     </html>
   );
