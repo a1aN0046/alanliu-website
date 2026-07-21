@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { ExperienceGallery } from "@/components/experience-gallery";
 import { LanguageSwitcher } from "@/components/language-switcher";
 import { ThemeSwitcher } from "@/components/theme-switcher";
 import { useLanguage } from "@/components/language-provider";
@@ -80,9 +81,13 @@ export function ExperienceDetail({ experience }: ExperienceDetailProps) {
             </ul>
           </section>
 
-          <section className="mt-12 rounded-lg border border-dashed border-slate-300 bg-white p-8 text-center text-sm text-slate-500 dark:border-slate-700 dark:bg-slate-900 dark:text-slate-400">
-            {text.detail.images}
-          </section>
+          <ExperienceGallery images={experience.images} labels={text.detail} />
+
+          <div className="mt-12 border-t border-slate-200 pt-8 dark:border-slate-800">
+            <Link href="/#experience" className="inline-flex items-center text-sm font-semibold text-slate-600 transition hover:text-blue-700 dark:text-slate-300 dark:hover:text-blue-300">
+              <span aria-hidden="true" className="mr-2">←</span> {text.detail.backHome}
+            </Link>
+          </div>
         </article>
       </div>
     </main>

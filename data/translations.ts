@@ -79,6 +79,12 @@ export const translations = {
       responsibilities: "Responsibilities",
       technicalSkills: "Technical Skills / Tools",
       learned: "What I Learned",
+      gallery: "Experience Gallery",
+      viewImage: "View Image",
+      previousImage: "Previous Image",
+      nextImage: "Next Image",
+      closeImage: "Close Image",
+      image: "Image",
       images: "Project images will be added later."
     },
     footer: "All rights reserved."
@@ -147,7 +153,13 @@ export const translations = {
       responsibilities: "主要职责",
       technicalSkills: "技术技能 / 工具",
       learned: "实践收获",
-      images: "项目图片将在之后添加。"
+      gallery: "经历图片",
+      viewImage: "查看图片",
+      previousImage: "上一张",
+      nextImage: "下一张",
+      closeImage: "关闭图片",
+      image: "图片",
+      images: "项目图片将在后续添加"
     },
     footer: "保留所有权利。"
   },
@@ -215,6 +227,12 @@ export const translations = {
       responsibilities: "Responsabilidades",
       technicalSkills: "Habilidades técnicas / Herramientas",
       learned: "Lo que aprendí",
+      gallery: "Galería de la experiencia",
+      viewImage: "Ver imagen",
+      previousImage: "Imagen anterior",
+      nextImage: "Imagen siguiente",
+      closeImage: "Cerrar imagen",
+      image: "Imagen",
       images: "Las imágenes del proyecto se añadirán más adelante."
     },
     footer: "Todos los derechos reservados."
@@ -283,7 +301,13 @@ export const translations = {
       responsibilities: "担当業務",
       technicalSkills: "技術スキル / ツール",
       learned: "学んだこと",
-      images: "プロジェクト画像は後日追加予定です。"
+      gallery: "経験ギャラリー",
+      viewImage: "画像を見る",
+      previousImage: "前の画像",
+      nextImage: "次の画像",
+      closeImage: "画像を閉じる",
+      image: "画像",
+      images: "プロジェクト画像は後日追加されます"
     },
     footer: "All rights reserved."
   }

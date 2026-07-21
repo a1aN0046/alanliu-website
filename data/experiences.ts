@@ -1,7 +1,16 @@
 import type { Language, LocalizedText } from "@/data/translations";
 
+export interface ExperienceImage {
+  src: string;
+  alt: string;
+  caption?: string;
+  fit?: "cover" | "contain";
+  width: number;
+  height: number;
+}
+
 export interface Experience {
-  slug: "juul-labs" | "meta" | "franklinwh" | "apple";
+  slug: "juul-labs" | "meta" | "franklinwh" | "apple" | "openai";
   company: string;
   role: LocalizedText;
   location: LocalizedText;
@@ -11,6 +20,7 @@ export interface Experience {
   responsibilities: Record<Language, string[]>;
   tools: Record<Language, string[]>;
   learned: Record<Language, string[]>;
+  images: ExperienceImage[];
 }
 
 export const experiences: Experience[] = [
@@ -87,7 +97,17 @@ export const experiences: Experience[] = [
       zh: ["加深了对生产质量控制和制造规范的理解。", "了解了细微组装差异对产品一致性和可靠性的影响。", "在真实生产环境中提升了对细节的关注。"],
       es: ["Mejoró su comprensión del control de calidad y la disciplina de manufactura.", "Aprendió cómo pequeños detalles de ensamble afectan la consistencia y confiabilidad.", "Fortaleció su atención al detalle en un entorno real de producción."],
       ja: ["生産品質管理と製造規律への理解を深めました。", "小さな組み立ての違いが製品の一貫性と信頼性に影響することを学びました。", "実際の生産現場で細部への注意力を高めました。"]
-    }
+    },
+    images: [
+      {
+        src: "/images/experience/juul/juul-1.jpg",
+        alt: "Automated manufacturing fixture with cameras, dispensing equipment, and positioning hardware",
+        caption: "Production equipment used for controlled assembly and inspection work.",
+        fit: "cover",
+        width: 1702,
+        height: 1276
+      }
+    ]
   },
   {
     slug: "meta",
@@ -140,7 +160,25 @@ export const experiences: Experience[] = [
       zh: ["积累了传感器校准和机器人测试流程的实践经验。", "理解了工程验证如何提升硬件可靠性。", "加深了对精密设置和测试可重复性的理解。"],
       es: ["Adquirió experiencia práctica en calibración de sensores y pruebas robóticas.", "Aprendió cómo la validación de ingeniería respalda la confiabilidad del hardware.", "Comprendió mejor la configuración de precisión y la repetibilidad de las pruebas."],
       ja: ["センサー校正とロボット試験工程の実践経験を積みました。", "エンジニアリング検証がハードウェアの信頼性を支える仕組みを学びました。", "精密なセットアップと試験再現性への理解を深めました。"]
-    }
+    },
+    images: [
+      {
+        src: "/images/experience/meta/meta-3.png",
+        alt: "Industrial test station control panel with screen content anonymized",
+        caption: "Control station used to operate and monitor automated testing equipment.",
+        fit: "contain",
+        width: 941,
+        height: 1672
+      },
+      {
+        src: "/images/experience/meta/meta-2.jpg",
+        alt: "Close-up of pneumatic lines and automated test fixture components",
+        caption: "Pneumatic connections, sensors, and fixture components used during test setup.",
+        fit: "cover",
+        width: 1276,
+        height: 958
+      }
+    ]
   },
   {
     slug: "franklinwh",
@@ -187,7 +225,33 @@ export const experiences: Experience[] = [
       zh: ["了解机械对准和部件状态如何影响生产设备正常运行时间。", "积累了实际硬件故障诊断经验。", "提升了在制造设备和工程团队环境中工作的信心。"],
       es: ["Aprendió cómo la alineación mecánica y el estado de los componentes afectan la continuidad de producción.", "Adquirió experiencia diagnosticando fallas reales de hardware.", "Ganó confianza trabajando con equipos de manufactura y equipos de ingeniería."],
       ja: ["機械的な位置合わせと部品状態が生産稼働率に与える影響を学びました。", "実際のハードウェア故障を診断する経験を積みました。", "製造設備やエンジニアチームと働く自信を高めました。"]
-    }
+    },
+    images: [
+      {
+        src: "/images/experience/franklinwh/franklinwh-1.png",
+        alt: "Industrial robotic arm and assembly tooling with a person anonymized",
+        caption: "Robotic manufacturing equipment and tooling used in an assembly environment.",
+        fit: "cover",
+        width: 1448,
+        height: 1086
+      },
+      {
+        src: "/images/experience/franklinwh/franklinwh-2.png",
+        alt: "Manufacturing floor with personnel anonymized for privacy",
+        caption: "Manufacturing environment supporting energy-storage assembly operations.",
+        fit: "cover",
+        width: 1448,
+        height: 1086
+      },
+      {
+        src: "/images/experience/franklinwh/franklinwh-3.png",
+        alt: "Guarded industrial robot cell with safety signage and a person anonymized",
+        caption: "Guarded robotic work cell designed for controlled automated operation.",
+        fit: "cover",
+        width: 1448,
+        height: 1086
+      }
+    ]
   },
   {
     slug: "apple",
@@ -229,7 +293,114 @@ export const experiences: Experience[] = [
       zh: ["了解机器人对接精度如何受到物理对准、站点高度、布线和接口质量的影响。", "积累了遵循部署要求并适应实际现场条件的经验。", "提升了现场故障排查、文档记录和专业沟通能力。"],
       es: ["Aprendió cómo la precisión de acoplamiento depende de la alineación, altura, cableado y calidad de las interfaces.", "Adquirió experiencia siguiendo requisitos de implementación y adaptándose a condiciones reales.", "Mejoró sus habilidades de diagnóstico en campo, documentación y comunicación profesional."],
       ja: ["ロボットのドッキング精度が物理的な位置合わせ、設置高さ、配線、インターフェース品質に左右されることを学びました。", "導入要件に従いながら現場状況に適応する経験を積みました。", "現場でのトラブル対応、文書化、専門的なコミュニケーション能力を向上させました。"]
-    }
+    },
+    images: [
+      {
+        src: "/images/experience/apple/apple-1.jpg",
+        alt: "Mobile robot platform carrying mounted test and positioning hardware",
+        caption: "Mobile robotic platform configured with hardware used during field setup.",
+        fit: "contain",
+        width: 1080,
+        height: 1920
+      },
+      {
+        src: "/images/experience/apple/apple-2.jpg",
+        alt: "Overhead view of mounted fixture components, cabling, and alignment hardware",
+        caption: "Fixture hardware arranged for positioning and interface setup.",
+        fit: "cover",
+        width: 1702,
+        height: 1276
+      }
+    ]
+  },
+  {
+    slug: "openai",
+    company: "OpenAI",
+    role: {
+      en: "Hardware Test Fixture / PCB Rework Technician",
+      zh: "硬件测试夹具 / PCB 返修技术员",
+      es: "Técnico de dispositivos de prueba de hardware / retrabajo de PCB",
+      ja: "ハードウェア試験治具 / PCB リワーク技術者"
+    },
+    location: {
+      en: "San Francisco Bay Area, CA",
+      zh: "加利福尼亚州旧金山湾区",
+      es: "Área de la Bahía de San Francisco, California",
+      ja: "カリフォルニア州サンフランシスコ・ベイエリア"
+    },
+    date: {
+      en: "July 2026",
+      zh: "2026 年 7 月",
+      es: "Julio de 2026",
+      ja: "2026 年 7 月"
+    },
+    summary: {
+      en: "Supported PCB replacement and maintenance work for reusable hardware test fixtures used in structured engineering validation and production-style testing workflows.",
+      zh: "为用于规范化工程验证和生产式测试流程的可重复使用硬件测试夹具提供 PCB 更换与维护支持。",
+      es: "Apoyó el reemplazo y mantenimiento de PCB en dispositivos reutilizables empleados en validación de ingeniería y flujos de pruebas de producción.",
+      ja: "体系的なエンジニアリング検証と生産形式の試験工程で使用する再利用可能なハードウェア試験治具について、PCB 交換と保守を支援しました。"
+    },
+    overview: {
+      en: "Supported hardware test fixture maintenance by replacing interface PCB boards in reusable docking and validation fixtures. Assisted with restoring fixture readiness, verifying correct board installation, and supporting hardware validation workflows.",
+      zh: "通过更换可重复使用的对接与验证夹具中的接口 PCB，支持硬件测试夹具维护。协助恢复夹具可用状态、确认电路板安装正确，并支持硬件验证流程。",
+      es: "Apoyó el mantenimiento de dispositivos de prueba mediante el reemplazo de PCB de interfaz en dispositivos reutilizables de acoplamiento y validación. Ayudó a restablecer su disponibilidad, verificar la instalación correcta y respaldar flujos de validación de hardware.",
+      ja: "再利用可能なドッキング・検証治具のインターフェース PCB を交換し、ハードウェア試験治具の保守を支援しました。治具の使用準備、基板の正しい取付確認、ハードウェア検証工程を支援しました。"
+    },
+    responsibilities: {
+      en: [
+        "Replaced interface PCB boards in multiple reusable docking and hardware test fixtures.",
+        "Disassembled and reassembled fixture components while maintaining mechanical alignment and connector integrity.",
+        "Inspected PCB seating, connectors, fasteners, contact areas, and fixture condition.",
+        "Followed ESD-safe hardware handling and controlled assembly procedures.",
+        "Maintained consistent installation quality across multiple identical fixtures.",
+        "Verified correct reassembly and readiness for subsequent engineering validation.",
+        "Reported damaged or questionable components for further review."
+      ],
+      zh: [
+        "更换多个可重复使用的对接和硬件测试夹具中的接口 PCB。",
+        "谨慎拆卸并重新组装夹具部件，同时保持机械对准和连接器完整性。",
+        "在返修过程中检查 PCB 就位情况、连接器、紧固件、接触区域和夹具状态。",
+        "遵循 ESD 安全的硬件操作和受控装配流程。",
+        "在多个相同夹具上保持一致的安装质量。",
+        "确认每个夹具均正确重新组装，并可用于后续工程验证。",
+        "记录已完成的更换工作，并报告损坏或状态存疑的部件以供进一步检查。"
+      ],
+      es: [
+        "Reemplazó PCB de interfaz en múltiples dispositivos reutilizables de acoplamiento y prueba de hardware.",
+        "Desmontó y volvió a montar componentes con cuidado, manteniendo la alineación mecánica y la integridad de los conectores.",
+        "Inspeccionó el asiento de las PCB, conectores, sujetadores, áreas de contacto y estado de los dispositivos.",
+        "Siguió prácticas de manipulación seguras contra ESD y procedimientos de ensamble controlado.",
+        "Mantuvo una calidad de instalación uniforme en múltiples dispositivos idénticos.",
+        "Verificó que cada dispositivo quedara correctamente montado y listo para validación posterior.",
+        "Documentó los reemplazos e informó componentes dañados o dudosos para revisión."
+      ],
+      ja: [
+        "複数の再利用可能なドッキング・ハードウェア試験治具でインターフェース PCB を交換しました。",
+        "機械的な位置合わせとコネクタの完全性を保ちながら、治具部品を慎重に分解・再組み立てしました。",
+        "リワーク中に PCB の装着、コネクタ、締結部品、接触部、治具の状態を確認しました。",
+        "ESD に配慮したハードウェア取扱いと管理された組み立て手順に従いました。",
+        "複数の同一治具で一貫した取付品質を維持しました。",
+        "各治具が正しく再組み立てされ、後続のエンジニアリング検証に使用できることを確認しました。",
+        "交換完了を記録し、損傷または確認が必要な部品を報告しました。"
+      ]
+    },
+    tools: {
+      en: ["PCB replacement", "Electronics assembly", "Hardware test fixtures", "Connector inspection", "Hardware rework", "ESD-safe handling", "Production test support", "Quality inspection"],
+      zh: ["PCB 更换", "电子装配", "硬件测试夹具", "连接器检查", "硬件返修", "ESD 安全操作", "生产测试支持", "质量检查"],
+      es: ["Reemplazo de PCB", "Ensamble electrónico", "Dispositivos de prueba de hardware", "Inspección de conectores", "Retrabajo de hardware", "Manipulación segura contra ESD", "Soporte de pruebas de producción", "Inspección de calidad"],
+      ja: ["PCB 交換", "電子機器組み立て", "ハードウェア試験治具", "コネクタ検査", "ハードウェアリワーク", "ESD 対応", "生産試験支援", "品質検査"]
+    },
+    learned: {
+      en: [
+        "Learned how reusable test fixtures support engineering validation and production testing.",
+        "Gained practical experience replacing interface PCBs while preserving mechanical alignment.",
+        "Improved attention to detail when working with repeated sensitive electronic assemblies."
+      ],
+      zh: ["了解了可重复使用的测试夹具如何支持工程验证和生产测试。", "积累了在保持机械对准的同时更换接口 PCB 的实践经验。", "在重复处理敏感电子组件时提升了对细节的关注。"],
+      es: ["Aprendió cómo los dispositivos reutilizables respaldan la validación de ingeniería y las pruebas de producción.", "Adquirió experiencia reemplazando PCB de interfaz y preservando la alineación mecánica.", "Mejoró su atención al detalle al trabajar repetidamente con ensambles electrónicos sensibles."],
+      ja: ["再利用可能な試験治具がエンジニアリング検証と生産試験を支える仕組みを学びました。", "機械的な位置合わせを保ちながらインターフェース PCB を交換する実務経験を積みました。", "繰り返し扱う繊細な電子アセンブリで細部への注意力を高めました。"]
+    },
+    images: []
   }
 ];
 
