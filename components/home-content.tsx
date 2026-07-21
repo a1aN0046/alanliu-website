@@ -93,8 +93,8 @@ export function HomeContent() {
               {text.hero.interests}
             </p>
             <div className="mt-8 flex flex-wrap gap-4">
-              <a href="#projects" className="rounded-full bg-blue-600 px-6 py-3 text-sm font-semibold text-white transition hover:bg-blue-700">
-                {text.hero.viewProjects}
+              <a href="#experience" className="rounded-full bg-blue-600 px-6 py-3 text-sm font-semibold text-white transition hover:bg-blue-700">
+                {text.hero.viewInternships}
               </a>
               <a href="#contact" className="rounded-full border border-slate-300 bg-white px-6 py-3 text-sm font-semibold text-slate-800 transition hover:border-blue-300 hover:text-blue-700 dark:border-slate-700 dark:bg-slate-900 dark:text-slate-100 dark:hover:border-blue-500 dark:hover:text-blue-300">
                 {text.nav.contact}

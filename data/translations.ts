@@ -29,7 +29,7 @@ export const translations = {
       eyebrow: "Electrical Engineering Portfolio",
       bio: "Incoming UCLA student at the UCLA Henry Samueli School of Engineering and Applied Science, studying Electrical Engineering.",
       interests: "Alan is interested in electrical engineering, computer engineering, robotics, software development, hardware systems, and PC building.",
-      viewProjects: "View Projects",
+      viewInternships: "View Internships",
       focusAreas: "Focus Areas"
     },
     about: {
@@ -103,7 +103,7 @@ export const translations = {
       eyebrow: "电气工程作品集",
       bio: "即将就读于加州大学洛杉矶分校亨利·萨缪利工程与应用科学学院，主修电气工程。",
       interests: "Alan 关注电气工程、计算机工程、机器人、软件开发、硬件系统和电脑组装。",
-      viewProjects: "查看项目",
+      viewInternships: "查看实习经历",
       focusAreas: "关注领域"
     },
     about: {
@@ -177,7 +177,7 @@ export const translations = {
       eyebrow: "Portafolio de Ingeniería Eléctrica",
       bio: "Próximo estudiante de UCLA en la Escuela de Ingeniería y Ciencias Aplicadas Henry Samueli, donde estudiará Ingeniería Eléctrica.",
       interests: "Alan está interesado en ingeniería eléctrica, ingeniería informática, robótica, desarrollo de software, sistemas de hardware y armado de computadoras.",
-      viewProjects: "Ver proyectos",
+      viewInternships: "Ver prácticas",
       focusAreas: "Áreas de interés"
     },
     about: {
@@ -251,7 +251,7 @@ export const translations = {
       eyebrow: "電気工学ポートフォリオ",
       bio: "UCLA ヘンリー・サミュエリ工学・応用科学部に進学し、電気工学を専攻予定です。",
       interests: "Alan は、電気工学、コンピュータ工学、ロボティクス、ソフトウェア開発、ハードウェアシステム、PC 組み立てに関心があります。",
-      viewProjects: "プロジェクトを見る",
+      viewInternships: "インターン経験を見る",
       focusAreas: "関心分野"
     },
     about: {

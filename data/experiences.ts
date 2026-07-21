@@ -35,11 +35,11 @@ export const experiences: Experience[] = [
     },
     location: {
       en: "Mountain View, CA",
-      zh: "加利福尼亚州山景城",
-      es: "Mountain View, California",
-      ja: "カリフォルニア州マウンテンビュー"
+      zh: "Mountain View, CA",
+      es: "Mountain View, CA",
+      ja: "Mountain View, CA"
     },
-    date: { en: "June 2026", zh: "2026 年 6 月", es: "Junio de 2026", ja: "2026 年 6 月" },
+    date: { en: "2026–Present", zh: "2026–Present", es: "2026–Present", ja: "2026–Present" },
     summary: {
       en: "Supported manufacturing operations through product assembly, inspection, testing, and daily production support.",
       zh: "参与产品组装、检验、测试和日常生产支持工作。",
@@ -119,12 +119,12 @@ export const experiences: Experience[] = [
       ja: "電気エンジニア・アシスタントインターン"
     },
     location: {
-      en: "Menlo Park, CA",
-      zh: "加利福尼亚州门洛帕克",
-      es: "Menlo Park, California",
-      ja: "カリフォルニア州メンロパーク"
+      en: "Seattle, WA",
+      zh: "Seattle, WA",
+      es: "Seattle, WA",
+      ja: "Seattle, WA"
     },
-    date: { en: "Summer 2024 / 2026", zh: "2024 / 2026 年夏季", es: "Verano de 2024 / 2026", ja: "2024 / 2026 年夏" },
+    date: { en: "Summer 2024", zh: "Summer 2024", es: "Summer 2024", ja: "Summer 2024" },
     summary: {
       en: "Assisted with robotic testing systems, sensor calibration, hardware validation, and automated test fixtures.",
       zh: "协助机器人测试系统、传感器校准、硬件验证和自动化测试夹具相关工作。",
@@ -199,11 +199,11 @@ export const experiences: Experience[] = [
     },
     location: {
       en: "San Jose, CA",
-      zh: "加利福尼亚州圣何塞",
-      es: "San José, California",
-      ja: "カリフォルニア州サンノゼ"
+      zh: "San Jose, CA",
+      es: "San Jose, CA",
+      ja: "San Jose, CA"
     },
-    date: { en: "2024 - 2025", zh: "2024 - 2025 年", es: "2024 - 2025", ja: "2024 - 2025 年" },
+    date: { en: "2024–2025", zh: "2024–2025", es: "2024–2025", ja: "2024–2025" },
     summary: {
       en: "Supported battery-system manufacturing, assembly operations, and practical mechanical troubleshooting.",
       zh: "支持电池系统制造、装配作业和现场机械故障排查。",
@@ -270,8 +270,8 @@ export const experiences: Experience[] = [
       es: "Asistente de Implementación Robótica / Ingeniería de Campo",
       ja: "ロボティクス導入 / フィールドエンジニアリング・アシスタント"
     },
-    location: { en: "California", zh: "加利福尼亚州", es: "California", ja: "カリフォルニア州" },
-    date: { en: "Summer 2026", zh: "2026 年夏季", es: "Verano de 2026", ja: "2026 年夏" },
+    location: { en: "Mountain View, CA", zh: "Mountain View, CA", es: "Mountain View, CA", ja: "Mountain View, CA" },
+    date: { en: "2026", zh: "2026", es: "2026", ja: "2026" },
     summary: {
       en: "Supported on-site deployment and validation of robotic charging stations and automated product testing fixtures, including station setup, interface installation, cable routing, and functional testing.",
       zh: "支持机器人充电站和自动化产品测试夹具的现场部署与验证，包括站点设置、接口安装、布线和功能测试。",
@@ -348,15 +348,15 @@ export const experiences: Experience[] = [
     },
     location: {
       en: "San Francisco Bay Area, CA",
-      zh: "加利福尼亚州旧金山湾区",
-      es: "Área de la Bahía de San Francisco, California",
-      ja: "カリフォルニア州サンフランシスコ・ベイエリア"
+      zh: "San Francisco Bay Area, CA",
+      es: "San Francisco Bay Area, CA",
+      ja: "San Francisco Bay Area, CA"
     },
     date: {
-      en: "July 2026",
-      zh: "2026 年 7 月",
-      es: "Julio de 2026",
-      ja: "2026 年 7 月"
+      en: "2026",
+      zh: "2026",
+      es: "2026",
+      ja: "2026"
     },
     summary: {
       en: "Supported PCB replacement and maintenance work for reusable hardware test fixtures used in structured engineering validation and production-style testing workflows.",
