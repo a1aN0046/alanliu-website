@@ -163,12 +163,12 @@ export const experiences: Experience[] = [
     },
     images: [
       {
-        src: "/images/experience/meta/meta-3.png",
-        alt: "Industrial test station control panel with screen content anonymized",
-        caption: "Control station used to operate and monitor automated testing equipment.",
-        fit: "contain",
-        width: 941,
-        height: 1672
+        src: "/images/experience/meta/meta-1.png",
+        alt: "Robotic hardware test chamber used during engineering validation",
+        caption: "Controlled testing enclosure used for robotic and hardware validation.",
+        fit: "cover",
+        width: 1448,
+        height: 1086
       },
       {
         src: "/images/experience/meta/meta-2.jpg",
@@ -177,6 +177,14 @@ export const experiences: Experience[] = [
         fit: "cover",
         width: 1276,
         height: 958
+      },
+      {
+        src: "/images/experience/meta/meta-3.png",
+        alt: "Industrial test station control panel with screen content anonymized",
+        caption: "Control station used to operate and monitor automated testing equipment.",
+        fit: "contain",
+        width: 941,
+        height: 1672
       }
     ]
   },
@@ -310,6 +318,22 @@ export const experiences: Experience[] = [
         fit: "cover",
         width: 1702,
         height: 1276
+      },
+      {
+        src: "/images/experience/apple/apple-3.jpg",
+        alt: "Multi-position hardware fixture with aligned interface modules",
+        caption: "Hardware fixture arranged for repeatable interface positioning.",
+        fit: "cover",
+        width: 1702,
+        height: 1276
+      },
+      {
+        src: "/images/experience/apple/apple-4.jpg",
+        alt: "Close-up of interface modules and alignment hardware in a test fixture",
+        caption: "Close-up view of fixture interfaces and positioning components.",
+        fit: "contain",
+        width: 1920,
+        height: 1080
       }
     ]
   },
@@ -400,7 +424,29 @@ export const experiences: Experience[] = [
       es: ["Aprendió cómo los dispositivos reutilizables respaldan la validación de ingeniería y las pruebas de producción.", "Adquirió experiencia reemplazando PCB de interfaz y preservando la alineación mecánica.", "Mejoró su atención al detalle al trabajar repetidamente con ensambles electrónicos sensibles."],
       ja: ["再利用可能な試験治具がエンジニアリング検証と生産試験を支える仕組みを学びました。", "機械的な位置合わせを保ちながらインターフェース PCB を交換する実務経験を積みました。", "繰り返し扱う繊細な電子アセンブリで細部への注意力を高めました。"]
     },
-    images: []
+    images: [
+      {
+        src: "/images/experience/openai/openai-1.jpg",
+        alt: "Reusable hardware test fixture with interface PCB",
+        fit: "cover",
+        width: 1702,
+        height: 1276
+      },
+      {
+        src: "/images/experience/openai/openai-2.jpg",
+        alt: "Fixture components used during hardware rework and validation support",
+        fit: "contain",
+        width: 1280,
+        height: 1707
+      },
+      {
+        src: "/images/experience/openai/openai-3.jpg",
+        alt: "Multiple hardware test fixtures prepared for PCB replacement",
+        fit: "cover",
+        width: 1702,
+        height: 1276
+      }
+    ]
   }
 ];
 

@@ -95,11 +95,6 @@ export function ExperienceGallery({ images, labels }: ExperienceGalleryProps) {
                   }`}
                 />
               </button>
-              {image.caption ? (
-                <figcaption className="border-t border-slate-200 px-4 py-3 text-sm leading-6 text-slate-600 dark:border-slate-800 dark:text-slate-300">
-                  {image.caption}
-                </figcaption>
-              ) : null}
             </figure>
           ))}
         </div>
@@ -146,12 +141,6 @@ export function ExperienceGallery({ images, labels }: ExperienceGalleryProps) {
                 className="h-auto max-h-[78vh] w-auto max-w-full rounded-lg object-contain"
               />
             </div>
-
-            {activeImage.caption ? (
-              <p className="mt-3 max-w-3xl text-center text-sm leading-6 text-slate-200">
-                {activeImage.caption}
-              </p>
-            ) : null}
 
             {images.length > 1 ? (
               <div className="mt-4 flex items-center gap-3">
