@@ -1,14 +1,5 @@
 import type { Language, LocalizedText } from "@/data/translations";
 
-export interface ExperienceImage {
-  src: string;
-  alt: string;
-  caption?: string;
-  fit?: "cover" | "contain";
-  width: number;
-  height: number;
-}
-
 export interface Experience {
   slug: "juul-labs" | "meta" | "franklinwh" | "apple" | "openai";
   company: string;
@@ -20,7 +11,6 @@ export interface Experience {
   responsibilities: Record<Language, string[]>;
   tools: Record<Language, string[]>;
   learned: Record<Language, string[]>;
-  images: ExperienceImage[];
 }
 
 export const experiences: Experience[] = [
@@ -97,17 +87,7 @@ export const experiences: Experience[] = [
       zh: ["加深了对生产质量控制和制造规范的理解。", "了解了细微组装差异对产品一致性和可靠性的影响。", "在真实生产环境中提升了对细节的关注。"],
       es: ["Mejoró su comprensión del control de calidad y la disciplina de manufactura.", "Aprendió cómo pequeños detalles de ensamble afectan la consistencia y confiabilidad.", "Fortaleció su atención al detalle en un entorno real de producción."],
       ja: ["生産品質管理と製造規律への理解を深めました。", "小さな組み立ての違いが製品の一貫性と信頼性に影響することを学びました。", "実際の生産現場で細部への注意力を高めました。"]
-    },
-    images: [
-      {
-        src: "/images/experience/juul/juul-1.jpg",
-        alt: "Automated manufacturing fixture with cameras, dispensing equipment, and positioning hardware",
-        caption: "Production equipment used for controlled assembly and inspection work.",
-        fit: "cover",
-        width: 1702,
-        height: 1276
-      }
-    ]
+    }
   },
   {
     slug: "meta",
@@ -160,33 +140,7 @@ export const experiences: Experience[] = [
       zh: ["积累了传感器校准和机器人测试流程的实践经验。", "理解了工程验证如何提升硬件可靠性。", "加深了对精密设置和测试可重复性的理解。"],
       es: ["Adquirió experiencia práctica en calibración de sensores y pruebas robóticas.", "Aprendió cómo la validación de ingeniería respalda la confiabilidad del hardware.", "Comprendió mejor la configuración de precisión y la repetibilidad de las pruebas."],
       ja: ["センサー校正とロボット試験工程の実践経験を積みました。", "エンジニアリング検証がハードウェアの信頼性を支える仕組みを学びました。", "精密なセットアップと試験再現性への理解を深めました。"]
-    },
-    images: [
-      {
-        src: "/images/experience/meta/meta-1.png",
-        alt: "Robotic hardware test chamber used during engineering validation",
-        caption: "Controlled testing enclosure used for robotic and hardware validation.",
-        fit: "cover",
-        width: 1448,
-        height: 1086
-      },
-      {
-        src: "/images/experience/meta/meta-2.jpg",
-        alt: "Close-up of pneumatic lines and automated test fixture components",
-        caption: "Pneumatic connections, sensors, and fixture components used during test setup.",
-        fit: "cover",
-        width: 1276,
-        height: 958
-      },
-      {
-        src: "/images/experience/meta/meta-3.png",
-        alt: "Industrial test station control panel with screen content anonymized",
-        caption: "Control station used to operate and monitor automated testing equipment.",
-        fit: "contain",
-        width: 941,
-        height: 1672
-      }
-    ]
+    }
   },
   {
     slug: "franklinwh",
@@ -233,33 +187,7 @@ export const experiences: Experience[] = [
       zh: ["了解机械对准和部件状态如何影响生产设备正常运行时间。", "积累了实际硬件故障诊断经验。", "提升了在制造设备和工程团队环境中工作的信心。"],
       es: ["Aprendió cómo la alineación mecánica y el estado de los componentes afectan la continuidad de producción.", "Adquirió experiencia diagnosticando fallas reales de hardware.", "Ganó confianza trabajando con equipos de manufactura y equipos de ingeniería."],
       ja: ["機械的な位置合わせと部品状態が生産稼働率に与える影響を学びました。", "実際のハードウェア故障を診断する経験を積みました。", "製造設備やエンジニアチームと働く自信を高めました。"]
-    },
-    images: [
-      {
-        src: "/images/experience/franklinwh/franklinwh-1.png",
-        alt: "Industrial robotic arm and assembly tooling with a person anonymized",
-        caption: "Robotic manufacturing equipment and tooling used in an assembly environment.",
-        fit: "cover",
-        width: 1448,
-        height: 1086
-      },
-      {
-        src: "/images/experience/franklinwh/franklinwh-2.png",
-        alt: "Manufacturing floor with personnel anonymized for privacy",
-        caption: "Manufacturing environment supporting energy-storage assembly operations.",
-        fit: "cover",
-        width: 1448,
-        height: 1086
-      },
-      {
-        src: "/images/experience/franklinwh/franklinwh-3.png",
-        alt: "Guarded industrial robot cell with safety signage and a person anonymized",
-        caption: "Guarded robotic work cell designed for controlled automated operation.",
-        fit: "cover",
-        width: 1448,
-        height: 1086
-      }
-    ]
+    }
   },
   {
     slug: "apple",
@@ -301,41 +229,7 @@ export const experiences: Experience[] = [
       zh: ["了解机器人对接精度如何受到物理对准、站点高度、布线和接口质量的影响。", "积累了遵循部署要求并适应实际现场条件的经验。", "提升了现场故障排查、文档记录和专业沟通能力。"],
       es: ["Aprendió cómo la precisión de acoplamiento depende de la alineación, altura, cableado y calidad de las interfaces.", "Adquirió experiencia siguiendo requisitos de implementación y adaptándose a condiciones reales.", "Mejoró sus habilidades de diagnóstico en campo, documentación y comunicación profesional."],
       ja: ["ロボットのドッキング精度が物理的な位置合わせ、設置高さ、配線、インターフェース品質に左右されることを学びました。", "導入要件に従いながら現場状況に適応する経験を積みました。", "現場でのトラブル対応、文書化、専門的なコミュニケーション能力を向上させました。"]
-    },
-    images: [
-      {
-        src: "/images/experience/apple/apple-1.jpg",
-        alt: "Mobile robot platform carrying mounted test and positioning hardware",
-        caption: "Mobile robotic platform configured with hardware used during field setup.",
-        fit: "contain",
-        width: 1080,
-        height: 1920
-      },
-      {
-        src: "/images/experience/apple/apple-2.jpg",
-        alt: "Overhead view of mounted fixture components, cabling, and alignment hardware",
-        caption: "Fixture hardware arranged for positioning and interface setup.",
-        fit: "cover",
-        width: 1702,
-        height: 1276
-      },
-      {
-        src: "/images/experience/apple/apple-3.jpg",
-        alt: "Multi-position hardware fixture with aligned interface modules",
-        caption: "Hardware fixture arranged for repeatable interface positioning.",
-        fit: "cover",
-        width: 1702,
-        height: 1276
-      },
-      {
-        src: "/images/experience/apple/apple-4.jpg",
-        alt: "Close-up of interface modules and alignment hardware in a test fixture",
-        caption: "Close-up view of fixture interfaces and positioning components.",
-        fit: "contain",
-        width: 1920,
-        height: 1080
-      }
-    ]
+    }
   },
   {
     slug: "openai",
@@ -423,30 +317,7 @@ export const experiences: Experience[] = [
       zh: ["了解了可重复使用的测试夹具如何支持工程验证和生产测试。", "积累了在保持机械对准的同时更换接口 PCB 的实践经验。", "在重复处理敏感电子组件时提升了对细节的关注。"],
       es: ["Aprendió cómo los dispositivos reutilizables respaldan la validación de ingeniería y las pruebas de producción.", "Adquirió experiencia reemplazando PCB de interfaz y preservando la alineación mecánica.", "Mejoró su atención al detalle al trabajar repetidamente con ensambles electrónicos sensibles."],
       ja: ["再利用可能な試験治具がエンジニアリング検証と生産試験を支える仕組みを学びました。", "機械的な位置合わせを保ちながらインターフェース PCB を交換する実務経験を積みました。", "繰り返し扱う繊細な電子アセンブリで細部への注意力を高めました。"]
-    },
-    images: [
-      {
-        src: "/images/experience/openai/openai-1.jpg",
-        alt: "Reusable hardware test fixture with interface PCB",
-        fit: "cover",
-        width: 1702,
-        height: 1276
-      },
-      {
-        src: "/images/experience/openai/openai-2.jpg",
-        alt: "Fixture components used during hardware rework and validation support",
-        fit: "contain",
-        width: 1280,
-        height: 1707
-      },
-      {
-        src: "/images/experience/openai/openai-3.jpg",
-        alt: "Multiple hardware test fixtures prepared for PCB replacement",
-        fit: "cover",
-        width: 1702,
-        height: 1276
-      }
-    ]
+    }
   }
 ];
 
