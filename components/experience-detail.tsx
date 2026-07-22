@@ -35,7 +35,7 @@ export function ExperienceDetail({ experience }: ExperienceDetailProps) {
         <article className="py-16 sm:py-20">
           <p className="text-sm font-semibold uppercase tracking-[0.2em] text-blue-600 dark:text-blue-400">{experience.company}</p>
           <h1 className="mt-4 text-4xl font-bold tracking-tight sm:text-5xl">{experience.role[language]}</h1>
-          <dl className="mt-8 grid gap-4 border-y border-slate-200 py-6 sm:grid-cols-2 dark:border-slate-800">
+          <dl className="mt-8 grid gap-4 border-y border-slate-200 py-6 sm:grid-cols-3 dark:border-slate-800">
             <div>
               <dt className="text-sm font-semibold text-slate-500 dark:text-slate-400">{text.detail.location}</dt>
               <dd className="mt-1 font-medium">{experience.location[language]}</dd>
@@ -44,11 +44,22 @@ export function ExperienceDetail({ experience }: ExperienceDetailProps) {
               <dt className="text-sm font-semibold text-slate-500 dark:text-slate-400">{text.detail.date}</dt>
               <dd className="mt-1 font-medium">{experience.date[language]}</dd>
             </div>
+            {experience.engagementType === "vendor" ? (
+              <div>
+                <dt className="text-sm font-semibold text-slate-500 dark:text-slate-400">{text.detail.engagement}</dt>
+                <dd className="mt-1 font-medium">{text.detail.vendor}</dd>
+              </div>
+            ) : null}
           </dl>
 
           <section className="mt-12">
             <h2 className="text-2xl font-bold tracking-tight">{text.detail.overview}</h2>
-            <p className="mt-4 leading-8 text-slate-600 dark:text-slate-300">{experience.overview[language]}</p>
+            {experience.engagementType === "vendor" ? (
+              <p className="mt-4 border-l-2 border-blue-500 pl-4 text-sm leading-7 text-slate-600 dark:text-slate-300">
+                {text.detail.vendorDisclosure}
+              </p>
+            ) : null}
+            <p className="mt-5 leading-8 text-slate-600 dark:text-slate-300">{experience.overview[language]}</p>
           </section>
 
           <section className="mt-12">

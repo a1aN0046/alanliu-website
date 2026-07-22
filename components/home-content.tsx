@@ -94,7 +94,7 @@ export function HomeContent() {
             </p>
             <div className="mt-8 flex flex-wrap gap-4">
               <a href="#experience" className="rounded-full bg-blue-600 px-6 py-3 text-sm font-semibold text-white transition hover:bg-blue-700">
-                {text.hero.viewInternships}
+                {text.hero.viewExperience}
               </a>
               <a href="#contact" className="rounded-full border border-slate-300 bg-white px-6 py-3 text-sm font-semibold text-slate-800 transition hover:border-blue-300 hover:text-blue-700 dark:border-slate-700 dark:bg-slate-900 dark:text-slate-100 dark:hover:border-blue-500 dark:hover:text-blue-300">
                 {text.nav.contact}
@@ -151,7 +151,14 @@ export function HomeContent() {
                 className="group flex h-full flex-col rounded-2xl border border-slate-200 bg-slate-50 p-6 transition hover:border-blue-300 hover:shadow-sm dark:border-slate-800 dark:bg-slate-950 dark:hover:border-blue-500"
               >
                 <h3 className="text-xl font-semibold group-hover:text-blue-700 dark:group-hover:text-blue-300">{experience.company}</h3>
-                <p className="mt-2 font-medium text-slate-700 dark:text-slate-200">{experience.role[language]}</p>
+                <div className="mt-2 flex flex-wrap items-center gap-2">
+                  <p className="font-medium text-slate-700 dark:text-slate-200">{experience.role[language]}</p>
+                  {experience.engagementType === "vendor" ? (
+                    <span className="rounded-full border border-slate-200 px-2 py-0.5 text-xs font-medium text-slate-500 dark:border-slate-700 dark:text-slate-400">
+                      {text.experience.vendorEngagement}
+                    </span>
+                  ) : null}
+                </div>
                 <p className="mt-2 text-sm text-slate-500 dark:text-slate-400">
                   {experience.location[language]} | {experience.date[language]}
                 </p>

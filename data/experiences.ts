@@ -3,6 +3,7 @@ import type { Language, LocalizedText } from "@/data/translations";
 export interface Experience {
   slug: "juul-labs" | "meta" | "franklinwh" | "apple" | "openai";
   company: string;
+  engagementType: "vendor";
   role: LocalizedText;
   location: LocalizedText;
   date: LocalizedText;
@@ -17,6 +18,7 @@ export const experiences: Experience[] = [
   {
     slug: "juul-labs",
     company: "JUUL Labs, Inc.",
+    engagementType: "vendor",
     role: {
       en: "Manufacturing Intern",
       zh: "制造实习生",
@@ -92,6 +94,7 @@ export const experiences: Experience[] = [
   {
     slug: "meta",
     company: "Meta",
+    engagementType: "vendor",
     role: {
       en: "Electrical Engineer Assistant Intern",
       zh: "电气工程助理实习生",
@@ -145,6 +148,7 @@ export const experiences: Experience[] = [
   {
     slug: "franklinwh",
     company: "FranklinWH Energy Storage Inc.",
+    engagementType: "vendor",
     role: {
       en: "Electrical Engineer Assistant Intern",
       zh: "电气工程助理实习生",
@@ -192,6 +196,7 @@ export const experiences: Experience[] = [
   {
     slug: "apple",
     company: "Apple",
+    engagementType: "vendor",
     role: {
       en: "Robotics Deployment / Field Engineering Assistant",
       zh: "机器人部署 / 现场工程助理",
@@ -234,6 +239,7 @@ export const experiences: Experience[] = [
   {
     slug: "openai",
     company: "OpenAI",
+    engagementType: "vendor",
     role: {
       en: "Hardware Test Fixture / PCB Rework Technician",
       zh: "硬件测试夹具 / PCB 返修技术员",

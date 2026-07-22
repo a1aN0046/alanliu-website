@@ -29,7 +29,7 @@ export const translations = {
       eyebrow: "Electrical Engineering Portfolio",
       bio: "Incoming UCLA student at the UCLA Henry Samueli School of Engineering and Applied Science, studying Electrical Engineering.",
       interests: "Alan is interested in electrical engineering, computer engineering, robotics, software development, hardware systems, and PC building.",
-      viewInternships: "View Internships",
+      viewExperience: "View Experience",
       focusAreas: "Focus Areas"
     },
     about: {
@@ -45,7 +45,8 @@ export const translations = {
     },
     experience: {
       heading: "Internship & Field Experience",
-      viewDetails: "View Details"
+      viewDetails: "View Details",
+      vendorEngagement: "Vendor Engagement"
     },
     projects: {
       heading: "Projects",
@@ -75,6 +76,9 @@ export const translations = {
       backHome: "Back to Home",
       location: "Location",
       date: "Date",
+      engagement: "Engagement",
+      vendor: "Vendor",
+      vendorDisclosure: "This work was performed in a vendor capacity while supporting the client’s engineering and operational teams.",
       overview: "Overview",
       responsibilities: "Responsibilities",
       technicalSkills: "Technical Skills / Tools",
@@ -97,7 +101,7 @@ export const translations = {
       eyebrow: "电气工程作品集",
       bio: "即将就读于加州大学洛杉矶分校亨利·萨缪利工程与应用科学学院，主修电气工程。",
       interests: "Alan 关注电气工程、计算机工程、机器人、软件开发、硬件系统和电脑组装。",
-      viewInternships: "查看实习经历",
+      viewExperience: "查看工作经历",
       focusAreas: "关注领域"
     },
     about: {
@@ -113,7 +117,8 @@ export const translations = {
     },
     experience: {
       heading: "实习与现场经历",
-      viewDetails: "查看详情"
+      viewDetails: "查看详情",
+      vendorEngagement: "供应商项目经历"
     },
     projects: {
       heading: "项目",
@@ -143,6 +148,9 @@ export const translations = {
       backHome: "返回主页",
       location: "地点",
       date: "时间",
+      engagement: "合作身份",
+      vendor: "供应商人员",
+      vendorDisclosure: "此项工作以供应商人员身份完成，为客户的工程及运营团队提供支持。",
       overview: "概述",
       responsibilities: "主要职责",
       technicalSkills: "技术技能 / 工具",
@@ -165,7 +173,7 @@ export const translations = {
       eyebrow: "Portafolio de Ingeniería Eléctrica",
       bio: "Próximo estudiante de UCLA en la Escuela de Ingeniería y Ciencias Aplicadas Henry Samueli, donde estudiará Ingeniería Eléctrica.",
       interests: "Alan está interesado en ingeniería eléctrica, ingeniería informática, robótica, desarrollo de software, sistemas de hardware y armado de computadoras.",
-      viewInternships: "Ver prácticas",
+      viewExperience: "Ver experiencia",
       focusAreas: "Áreas de interés"
     },
     about: {
@@ -181,7 +189,8 @@ export const translations = {
     },
     experience: {
       heading: "Experiencia de prácticas y campo",
-      viewDetails: "Ver detalles"
+      viewDetails: "Ver detalles",
+      vendorEngagement: "Colaboración como proveedor externo"
     },
     projects: {
       heading: "Proyectos",
@@ -211,6 +220,9 @@ export const translations = {
       backHome: "Volver al inicio",
       location: "Ubicación",
       date: "Fecha",
+      engagement: "Tipo de colaboración",
+      vendor: "Proveedor externo",
+      vendorDisclosure: "Este trabajo se realizó como proveedor externo, brindando apoyo a los equipos de ingeniería y operaciones del cliente.",
       overview: "Resumen",
       responsibilities: "Responsabilidades",
       technicalSkills: "Habilidades técnicas / Herramientas",
@@ -233,7 +245,7 @@ export const translations = {
       eyebrow: "電気工学ポートフォリオ",
       bio: "UCLA ヘンリー・サミュエリ工学・応用科学部に進学し、電気工学を専攻予定です。",
       interests: "Alan は、電気工学、コンピュータ工学、ロボティクス、ソフトウェア開発、ハードウェアシステム、PC 組み立てに関心があります。",
-      viewInternships: "インターン経験を見る",
+      viewExperience: "経験を見る",
       focusAreas: "関心分野"
     },
     about: {
@@ -249,7 +261,8 @@ export const translations = {
     },
     experience: {
       heading: "インターン・現場経験",
-      viewDetails: "詳細を見る"
+      viewDetails: "詳細を見る",
+      vendorEngagement: "ベンダーとしての業務"
     },
     projects: {
       heading: "プロジェクト",
@@ -279,6 +292,9 @@ export const translations = {
       backHome: "ホームに戻る",
       location: "所在地",
       date: "期間",
+      engagement: "契約形態",
+      vendor: "ベンダー",
+      vendorDisclosure: "この業務は、クライアントのエンジニアリングおよび運用チームを支援するベンダーの立場で実施しました。",
       overview: "概要",
       responsibilities: "担当業務",
       technicalSkills: "技術スキル / ツール",
