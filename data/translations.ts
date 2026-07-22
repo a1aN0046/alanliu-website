@@ -80,6 +80,7 @@ export const translations = {
       technicalSkills: "Technical Skills / Tools",
       learned: "What I Learned"
     },
+    visits: "Visits",
     footer: "All rights reserved."
   },
   zh: {
@@ -147,6 +148,7 @@ export const translations = {
       technicalSkills: "技术技能 / 工具",
       learned: "实践收获"
     },
+    visits: "访问次数",
     footer: "保留所有权利。"
   },
   es: {
@@ -214,6 +216,7 @@ export const translations = {
       technicalSkills: "Habilidades técnicas / Herramientas",
       learned: "Lo que aprendí"
     },
+    visits: "Visitas",
     footer: "Todos los derechos reservados."
   },
   ja: {
@@ -281,6 +284,7 @@ export const translations = {
       technicalSkills: "技術スキル / ツール",
       learned: "学んだこと"
     },
+    visits: "訪問回数",
     footer: "All rights reserved."
   }
 } as const;

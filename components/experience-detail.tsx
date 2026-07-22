@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { BrandLink } from "@/components/brand-link";
 import { LanguageSwitcher } from "@/components/language-switcher";
 import { ThemeSwitcher } from "@/components/theme-switcher";
 import { useLanguage } from "@/components/language-provider";
@@ -19,9 +20,12 @@ export function ExperienceDetail({ experience }: ExperienceDetailProps) {
     <main className="min-h-screen bg-slate-50 text-slate-950 transition-colors dark:bg-slate-950 dark:text-slate-50">
       <div className="mx-auto max-w-4xl px-6 py-8 sm:py-10">
         <header className="flex flex-wrap items-center justify-between gap-4">
-          <Link href="/#experience" className="inline-flex items-center text-sm font-semibold text-slate-600 transition hover:text-blue-700 dark:text-slate-300 dark:hover:text-blue-300">
-            <span aria-hidden="true" className="mr-2">←</span> {text.detail.backHome}
-          </Link>
+          <div className="flex flex-wrap items-center gap-x-5 gap-y-3">
+            <BrandLink />
+            <Link href="/#experience" className="inline-flex items-center text-sm font-semibold text-slate-600 transition hover:text-blue-700 dark:text-slate-300 dark:hover:text-blue-300">
+              <span aria-hidden="true" className="mr-2">←</span> {text.detail.backHome}
+            </Link>
+          </div>
           <div className="flex flex-wrap items-center gap-2">
             <LanguageSwitcher />
             <ThemeSwitcher />

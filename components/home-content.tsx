@@ -1,8 +1,10 @@
 "use client";
 
 import Link from "next/link";
+import { BrandLink } from "@/components/brand-link";
 import { LanguageSwitcher } from "@/components/language-switcher";
 import { ThemeSwitcher } from "@/components/theme-switcher";
+import { VisitCounter } from "@/components/visit-counter";
 import { useLanguage } from "@/components/language-provider";
 import { experiences } from "@/data/experiences";
 import { interestTranslations, translations } from "@/data/translations";
@@ -60,9 +62,7 @@ export function HomeContent() {
     <main className="min-h-screen bg-slate-50 text-slate-950 transition-colors dark:bg-slate-950 dark:text-slate-50">
       <section className="mx-auto max-w-6xl px-6 py-8 sm:py-10">
         <nav className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between" aria-label="Primary navigation">
-          <a href="#home" className="text-lg font-semibold">
-            Alan Liu
-          </a>
+          <BrandLink />
           <div className="flex flex-col gap-4 lg:flex-row lg:items-center">
             <div className="flex flex-wrap gap-x-4 gap-y-2 text-sm font-medium text-slate-600 dark:text-slate-300">
               <a className="hover:text-blue-600 dark:hover:text-blue-400" href="#about">{text.nav.about}</a>
@@ -219,7 +219,10 @@ export function HomeContent() {
       </section>
 
       <footer className="py-8 text-center text-sm text-slate-500 dark:text-slate-400">
-        (c) {new Date().getFullYear()} Alan Liu. {text.footer}
+        <div className="mx-auto flex min-h-12 max-w-6xl flex-col items-center justify-center gap-1 px-6">
+          <p>(c) {new Date().getFullYear()} Alan Liu. {text.footer}</p>
+          <VisitCounter label={text.visits} locale={language} />
+        </div>
       </footer>
     </main>
   );
